@@ -31,7 +31,7 @@ It follows the official [Spring Security Getting Started Guide](https://spring.i
 
 ---
 
-## 🛠Getting Started
+## Getting Started
 
 ### 1. Clone the repo
 ```bash
