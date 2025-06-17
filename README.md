@@ -33,18 +33,32 @@ It follows the official [Spring Security Getting Started Guide](https://spring.i
 
 ## Getting Started
 
-### 1. Clone the repo
+###  Clone the repo
 ```bash
 git clone https://github.com/chris-euw/User-Authentication-Web-Application-with-Spring-Boot.git
 cd User-Authentication-Web-Application-with-Spring-Boot
 
-Run the Application
+### Clone the repo
+
+```bash
+git clone https://github.com/chris-euw/User-Authentication-Web-Application-with-Spring-Boot.git
+cd User-Authentication-Web-Application-with-Spring-Boot
+```
+
+### Run the Application
+
+```bash
 ./mvnw spring-boot:run
+```
 
-Default Credentials
-Username: user
-Password: (auto-generated, check console output)
-(To customize, edit WebSecurityConfig.java)
+### Default Credentials
 
+- **Username:** `user`  
+- **Password:** *(auto-generated, check console output)*  
+  *(To customize, edit `WebSecurityConfig.java`)*
 
+---
+
+## Based on the official Spring Security guide  
+Created by **chris-euw**.
 
