@@ -1,6 +1,6 @@
 # User-Authentication-Web-Application-with-Spring-Boot
 A Spring Boot web application demonstrating user authentication with Spring Security, Thymeleaf, and H2. Built by following the official Spring guide, this project showcases form-based login, protected routes, and view rendering with MVC.
-This is a learning Project for myself to understand better how the Spring boot Applications work. I try to understand each step and comment my code for my own and other peoples understanding.
+This is a learning Project for myself to understand better how the Spring boot Applications work. I try to understand each step and comment my code for my own and other peoples understanding. Learning Documentation: https://www.notion.so/User-Authentication-Web-App-with-Spring-Boot-in-Java-215fec30d26f80ecae5df570dadce491?source=copy_link
 
 # User Authentication Web Application with Spring Boot
 
