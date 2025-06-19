@@ -5,21 +5,28 @@
     <title>Spring Security Example</title>
 </head>
 <body>
-<!--parameter that checks if it's the wrong username -> throws an erorr mssg-->
+
+<!-- Shown if login failed (e.g., wrong username or password)
 <div th:if="${param.error}">
     Invalid username and password.
 </div>
 
+<!-- Shown after successful logout -->
 <div th:if="${param.logout}">
     You have been logged out.
 </div>
 
+<!-- Login form: submits POST request to /login -->
 <form th:action="@{/login}" method="post">
     <div>
-        <label>Username: <input type="text" name="username"/></label>
+        <label>Username:
+            <input type="text" name="username"/>
+        </label>
     </div>
     <div>
-        <label>Password: <input type="password" name="password"/></label>
+        <label>Password:
+            <input type="password" name="password"/>
+        </label>
     </div>
     <div>
         <input type="submit" value="Sign In"/>

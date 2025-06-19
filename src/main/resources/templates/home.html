@@ -1,16 +1,38 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org"
       xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<!--
+  - xmlns:th enables Thymeleaf syntax for dynamic rendering
+  - xmlns:sec enables access to Spring Security features (like username/roles)
+-->
 <head>
     <meta charset="UTF-8">
     <title>Hello World</title>
-    <h1 th:inline="text">Hello <span th:remove="tag"
-        sec:authentication="name">Thymeleaf</span></h1>
-    <form th:action="@{/logout}" method="post">
-        <input type="submit" value="Sign Out"/>
-    </form>
+    <!-- Title  -->
 </head>
 <body>
+
+<!-- Heading that includes the currently logged-in user's name -->
+<h1 th:inline="text">
+    Hello
+    <span th:remove="tag" sec:authentication="name">Thymeleaf</span>
+    <!--
+        sec:authentication="name" displays the authenticated username
+        th:remove="tag" removes the <span> tag but keeps the text inside it
+        So the output becomes: Hello username
+    -->
+</h1>
+
+<!-- Logout form -->
+<form th:action="@{/logout}" method="post">
+    <!--
+        th:action sets the form’s action URL to /logout
+        method="post" is required by Spring Security for logout
+    -->
+    <input type="submit" value="Sign Out"/>
+    <!-- Clicking this will log the user out -->
+</form>
 
 </body>
 </html>
